@@ -9,25 +9,40 @@
     import HoverCard from "./_components/HoverCard.svelte";
     import {Rocket} from "radix-icons-svelte";
     import * as Alert from "$lib/components/ui/alert";
+    import Delay from "./_components/Delay.svelte";
+    import Title from "$lib/components/Title.svelte";
+    import Vis from "./stack/_components/Vis.svelte";
 </script>
 
 <div class="flex justify-center items-center min-h-[100vh]">
     <div class="w-[80%] lg:w-[50rem]">
-        <p class="font-cal text-[40px] tracking-[1px]">Hideko</p>
-        <div class="font-body font-[400] explain text-neutral-500 dark:text-neutral-400">
-            <Alert.Root>
-                <Rocket class="h-4 w-4" />
-                <Alert.Title class="font-[500]">Hello everyone!</Alert.Title>
-                <Alert.Description class="text-neutral-500 dark:text-neutral-400"
-                >I am Hideko, a fanatical open sourceror.</Alert.Description
-                >
-            </Alert.Root>
+<!--        <p class="font-cal text-[40px] tracking-[1px] title" style="background-position-x: {$gradientWStore}%">Hideko</p>-->
+        <Title>Hideko</Title>
+        <div class="font-body font-[400] text-[14px] sm:text-[16px] explain text-neutral-500 dark:text-neutral-400">
+            <Delay delay={100}>
+                <Alert.Root>
+                    <Rocket class="h-4 w-4" />
+                    <Alert.Title class="font-[500]">Hello everyone!</Alert.Title>
+                    <Alert.Description class="text-neutral-500 dark:text-neutral-400"
+                    >I am Hideko, a fanatical open sourceror.</Alert.Description
+                    >
+                </Alert.Root>
+            </Delay>
             <br>
-            <div><p>Creater of </p><HoverCard href="https://thundis.hideko-dev.com" title="Thundis" description="Early Rest API to get information about Discord users." date="November 2023"/></div>
-            <div><p>Working at</p><HoverCard title="Team Nekozouneko Dev" description="Nekozouneko Server Development Team" date=" Joined December 2023" avatar={Nkznk}/></div>
+            <Delay delay={200}>
+                <div><p>Creater of </p>
+                    <HoverCard href="https://thundis.hideko-dev.com" title="Thundis" description="Early Rest API to get information about Discord users." date="November 2023"/>,
+                    <HoverCard href="https://www.npmjs.com/package/svelte-scroller" title="svelte-scroller" description="Scroll detection library available in Svelte." date="Aug 2023"/>,
+                    <HoverCard href="https://github.com/hideko-dev/Mod-Us" title="Mod-Us" description="AmongUs Mod Management Tool." date="Dec 2022"/>
+                </div>
+            </Delay>
+            <Delay delay={300}>
+                <div><p>Working at</p><HoverCard title="Team Nekozouneko Dev" description="Nekozouneko Server Development Team" date=" Joined December 2023" avatar={Nkznk}/></div>
+            </Delay>
             <br>
-            <div><p>Dreaming up ideas and making them come true is where my passion lies. You can find my full projects list here. I also do some generative-art, compform, interactivity experiments on 100.antfu.me.</p></div>
-            <div><p>Outside of programming, I enjoy doing photography and traveling. Some of my photos can be found on Instagram. If you happen to be in the same city I live (currently in Paris), maybe we can hang out and take some photos or code together.</p></div>
+            <Delay delay={400}>
+                <div><p>Hello, I am a full stack engineer. I am a full stack engineer. I am mainly good at front-end development. But of course I am also good at backend and have touched various stacks. I have been exposed to various technologies, various designs, and have worked with people from many countries.</p></div>
+            </Delay>
         </div>
     </div>
 </div>
@@ -61,21 +76,3 @@
         left: 0;
     }
 </style>
-
-<!--<style>-->
-
-<!--    .explain div {-->
-<!--        display: flex;-->
-<!--        align-items: center;-->
-<!--    }-->
-
-<!--    .explain div p {-->
-<!--        opacity: 0.5;-->
-<!--        transition: opacity 0.3s;-->
-<!--        cursor: pointer;-->
-<!--    }-->
-
-<!--    .explain div:hover p {-->
-<!--        opacity: 1;-->
-<!--    }-->
-<!--</style>-->

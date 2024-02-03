@@ -6,11 +6,16 @@
     import { Alert } from "$lib/components/ui/alert";
     import Translations from "$lib/components/contact/Translations.svelte";
     import {submitContact} from "$lib/contact";
+    import { contactValue } from "$lib/contact";
     let mail: string
     let content: string
+    let value: boolean
+    $: {
+        contactValue.set(value)
+    }
 </script>
 
-<Drawer.Root>
+<Drawer.Root bind:open={value}>
     <Drawer.Trigger class="opacity-40 hover:opacity-100 transition-all">Contact</Drawer.Trigger>
     <Drawer.Content class="px-[10%] h-auto">
         <div class="grid place-items-center mt-[4rem]">
