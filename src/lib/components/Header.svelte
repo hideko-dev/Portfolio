@@ -6,7 +6,7 @@
 
     const hrefs = [
         {href: "https://github.com/Hideko-Dev", icon: "mingcute:github-line"},
-        {href: "https://instagram.com/hideko.cat", icon: "mdi:instagram"}
+        {href: "https://instagram.com/hideko.cat", icon: "mdi:instagram"},
     ]
 </script>
 
