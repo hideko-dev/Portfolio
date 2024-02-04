@@ -15,7 +15,7 @@
 </script>
 
 <div class="bg-black">
-	<div class="bg-[var(--prime-tune)] scale-[{$contactValue ? 0.97 : 1}] rounded-[{$contactValue ? 15 : 0}px] transition-all duration-700">
+	<div style="scale: {$contactValue ? 0.97 : 1}" class="bg-[var(--prime-tune)] rounded-[{$contactValue ? 15 : 0}px] transition-all duration-700">
 		<ModeWatcher/>
 		<Toaster/>
 		<Header/>

@@ -33,7 +33,9 @@
     {#key data}
         <div in:fade={{ duration: 200 }} out:fade={{ duration: 200 }} class="w-full">
             {#if data.length === 0}
-                <p class="absolute font-body font-[600] w-full flex justify-center items-center h-[65vh]">Loading...</p>
+                <div class="absolute w-full flex justify-center items-center h-[65vh] text-[50px]">
+                    <Icon icon="eos-icons:loading"/>
+                </div>
             {:else}
                 <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-[10%] gap-4 mt-[2rem]">
                     {#each data as c, index}
