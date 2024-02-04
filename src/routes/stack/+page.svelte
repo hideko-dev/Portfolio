@@ -7,7 +7,7 @@
     import { Badge } from "$lib/components/ui/badge"
     import {onMount} from "svelte";
     import {cms} from "$lib/cms.js";
-    import Delay from "../_components/Delay.svelte";
+    import Delay from "$lib/components/delay/Delay.svelte";
 
     let stacks: Array<any> = []
 

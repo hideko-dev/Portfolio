@@ -1,12 +1,15 @@
 <script lang="ts">
-    import { onMount, onDestroy } from "svelte";
-    import { writable } from 'svelte/store';
-    import Vis from "../../routes/stack/_components/Vis.svelte";
+    import { onMount, onDestroy } from "svelte"
+    import { writable } from 'svelte/store'
+    import Vis from "../../routes/stack/_components/Vis.svelte"
+    import { fly } from "svelte/transition";
 
     const gradientWStore = writable(0);
 
     onMount(() => {
-        gradientWStore.set(100);
+        setTimeout(() => {
+            gradientWStore.set(100);
+        }, 400)
     });
 
     onDestroy(() => {
@@ -14,7 +17,7 @@
     });
 </script>
 
-<div class="hidden"><Vis title="Backend"/></div>
+<div class="hidden"><Vis title="Vis"/></div>
 <p class="font-cal text-[40px] tracking-[1px] title" style="background-position-x: {$gradientWStore}%"><slot/></p>
 
 <style>

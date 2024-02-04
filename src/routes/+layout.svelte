@@ -1,17 +1,17 @@
 <script>
 	import { ModeWatcher } from "mode-watcher"
-	import { contactValue } from "$lib/contact";
+	import { contactValue } from "$lib/contact"
 	import { Toaster } from "svelte-sonner"
 	import "../app.pcss"
-	import Header from "$lib/components/Header.svelte"
+	import Header from "$lib/components/layout/Header.svelte"
 	import '@fontsource-variable/inter'
-	import Footer from "$lib/components/Footer.svelte"
-	import {onMount} from "svelte";
+	import Footer from "$lib/components/layout/Footer.svelte"
+	import { onMount } from "svelte"
+	import Transition from "$lib/components/Transition.svelte";
+	import { onHydrated } from "$lib/hydrated";
+	export let data
 
-	onMount(() => {
-		console.log("\n" + "%c█▄█ ▀█▀ █▀▄ █▀▀ █▄▀ █▀█ Portfolio \n" +
-				"█ █ ▄█▄ █▄▀ ██▄ █ █ █▄█ Site\n", "color: DodgerBlue; font-weight: bold")
-	})
+	onMount(() => onHydrated())
 </script>
 
 <div class="bg-black">
@@ -19,7 +19,9 @@
 		<ModeWatcher/>
 		<Toaster/>
 		<Header/>
-		<slot/>
+		<Transition pathname={data.pathname}>
+			<slot/>
+		</Transition>
 		<Footer/>
 	</div>
 </div>

@@ -4,8 +4,8 @@
     import { fade } from "svelte/transition";
     import { onMount } from "svelte";
     import Title from "$lib/components/Title.svelte";
-    import Delay from "../_components/Delay.svelte";
-    import WorksDelay from "../_components/WorksDelay.svelte";
+    import Delay from "$lib/components/delay/Delay.svelte";
+    import WorksDelay from "$lib/components/delay/WorksDelay.svelte";
 
     let data: Array<any> = []
 

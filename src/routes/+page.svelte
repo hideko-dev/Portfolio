@@ -1,9 +1,9 @@
 <script lang="ts">
     import Nkznk from "$lib/assets/nekozouneko.gif"
-    import HoverCard from "./_components/HoverCard.svelte";
+    import HoverCard from "$lib/components/HoverCard.svelte";
     import {Rocket} from "radix-icons-svelte";
     import * as Alert from "$lib/components/ui/alert";
-    import Delay from "./_components/Delay.svelte";
+    import Delay from "$lib/components/delay/Delay.svelte";
     import Title from "$lib/components/Title.svelte";
     import Vis from "./stack/_components/Vis.svelte";
 </script>

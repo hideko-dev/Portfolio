@@ -16,7 +16,7 @@
 </script>
 
 <Drawer.Root bind:open={value}>
-    <Drawer.Trigger class="opacity-40 hover:opacity-100 transition-all">Contact</Drawer.Trigger>
+    <Drawer.Trigger><slot/></Drawer.Trigger>
     <Drawer.Content class="px-[10%] h-auto">
         <div class="grid place-items-center mt-[4rem]">
             <div class="w-full">
