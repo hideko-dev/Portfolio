@@ -1,10 +1,4 @@
 <script lang="ts">
-	import { Button } from "$lib/components/ui/button"
-	import * as Drawer from "$lib/components/ui/drawer";
-    import {toggleMode, userPrefersMode} from "mode-watcher";
-    import { Switch } from "$lib/components/ui/switch";
-    import Contact from "$lib/components/contact/Contact.svelte";
-    import Icon from "@iconify/svelte"
     import Nkznk from "$lib/assets/nekozouneko.gif"
     import HoverCard from "./_components/HoverCard.svelte";
     import {Rocket} from "radix-icons-svelte";
@@ -14,9 +8,12 @@
     import Vis from "./stack/_components/Vis.svelte";
 </script>
 
+<svelte:head>
+    <title>Home - Hideko</title>
+</svelte:head>
+
 <div class="flex justify-center items-center min-h-[100vh]">
     <div class="w-[80%] lg:w-[50rem]">
-<!--        <p class="font-cal text-[40px] tracking-[1px] title" style="background-position-x: {$gradientWStore}%">Hideko</p>-->
         <Title>Hideko</Title>
         <div class="font-body font-[400] text-[14px] sm:text-[16px] explain text-neutral-500 dark:text-neutral-400">
             <Delay delay={100}>

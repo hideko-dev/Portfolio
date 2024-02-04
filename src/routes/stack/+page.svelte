@@ -15,8 +15,11 @@
         const res = await cms.get({ endpoint: "stack" });
         stacks = res.contents;
     })
-
 </script>
+
+<svelte:head>
+    <title>Stack - Hideko</title>
+</svelte:head>
 
 <div class="min-h-[100vh]">
     <a href="/" class="h-[4.5rem] w-max flex items-center text-[30px] ml-[20px] opacity-60 transition-all hover:opacity-100 cursor-pointer"><Icon icon="mingcute:left-line"/></a>

@@ -2,7 +2,7 @@
     import Icon from "@iconify/svelte"
     import { cms } from "$lib/cms";
     import { fade } from "svelte/transition";
-    import {onDestroy, onMount} from "svelte";
+    import { onMount } from "svelte";
     import Title from "$lib/components/Title.svelte";
     import Delay from "../_components/Delay.svelte";
     import WorksDelay from "../_components/WorksDelay.svelte";
@@ -22,6 +22,10 @@
         return `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()} `
     }
 </script>
+
+<svelte:head>
+    <title>Works - Hideko</title>
+</svelte:head>
 
 <div class="min-h-[100vh]">
     <a href="/" class="h-[4.5rem] w-max flex items-center text-[30px] ml-[20px] opacity-60 transition-all hover:opacity-100 cursor-pointer"><Icon icon="mingcute:left-line"/></a>
