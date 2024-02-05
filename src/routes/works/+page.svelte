@@ -1,6 +1,5 @@
 <script lang="ts">
     import Icon from "@iconify/svelte"
-    import { database } from "$lib/database";
     import { fade } from "svelte/transition";
     import { onMount } from "svelte";
     import Title from "$lib/components/Title.svelte";
