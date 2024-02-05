@@ -23,7 +23,11 @@
         {
             value: "backend",
             label: "Backend"
-        }
+        },
+        {
+            value: "database",
+            label: "Database"
+        },
     ];
 
     let open = false;

@@ -5,15 +5,14 @@
     import Selector from "./_components/Selector.svelte";
     import { value } from "$lib/stacks";
     import { Badge } from "$lib/components/ui/badge"
-    import {onMount} from "svelte";
-    import {cms} from "$lib/cms.js";
+    import { onMount } from "svelte";
     import Delay from "$lib/components/delay/Delay.svelte";
+    import { stacks } from "$lib/about";
 
-    let stacks: Array<any> = []
+    let stack: Array<any> = []
 
     onMount(async() => {
-        const res = await cms.get({ endpoint: "stack" });
-        stacks = res.contents;
+        stack = stacks;
     })
 </script>
 
@@ -30,23 +29,23 @@
     </div>
     <div class="px-[10%]">
         <Selector/>
-        {#key stacks}
+        {#key stack}
             <div class="inline-flex items-center flex-wrap gap-3 mt-2.5 w-full border-2 rounded-[10px] border-neutral-100 dark:border-neutral-900 p-3">
-                    {#if $value === ""}
-                        {#each stacks as stack, index}
-                            <Delay delay={index*100}>
+                {#if $value === ""}
+                    {#each stack as stack, index}
+                        <Delay delay={index*50}>
+                            <Badge class="p-1.5 px-3.5 rounded-[8px] text-[15px] cursor-pointer" variant="outline">{stack.name}</Badge>
+                        </Delay>
+                    {/each}
+                {:else}
+                    {#each stack as stack, index}
+                        {#if stack.type === $value}
+                            <Delay delay={index*50}>
                                 <Badge class="p-1.5 px-3.5 rounded-[8px] text-[15px] cursor-pointer" variant="outline">{stack.name}</Badge>
                             </Delay>
-                        {/each}
-                    {:else}
-                        {#each stacks as stack, index}
-                            {#if stack.type[0] === $value}
-                                <Delay delay={index*100}>
-                                    <Badge class="p-1.5 px-3.5 rounded-[8px] text-[15px] cursor-pointer" variant="outline">{stack.name}</Badge>
-                                </Delay>
-                            {/if}
-                        {/each}
-                    {/if}
+                        {/if}
+                    {/each}
+                {/if}
             </div>
         {/key}
     </div>

@@ -1,26 +1,16 @@
 <script lang="ts">
     import Icon from "@iconify/svelte"
-    import { cms } from "$lib/cms";
+    import { database } from "$lib/database";
     import { fade } from "svelte/transition";
     import { onMount } from "svelte";
     import Title from "$lib/components/Title.svelte";
     import Delay from "$lib/components/delay/Delay.svelte";
     import WorksDelay from "$lib/components/delay/WorksDelay.svelte";
-
+    import { works } from "$lib/about";
     let data: Array<any> = []
-
-    onMount(async() => {
-        const res = await cms.get({ endpoint: "works" });
-        data = res.contents;
+    onMount(() => {
+        data = works
     })
-    function getDate(response: Date) {
-        const date = new Date(response)
-        const months = [
-            "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-        ];
-        return `${months[date.getMonth()]} ${date.getDay()}, ${date.getFullYear()} `
-    }
 </script>
 
 <svelte:head>
@@ -44,11 +34,11 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-[10%] gap-4 mt-[2rem]">
                     {#each data as c, index}
                         <WorksDelay delay={index * 100}>
-                            <a href={c.website}>
+                            <a href={c.url}>
                                 <div>
-                                    <p class="text-neutral-200 dark:text-neutral-600">{getDate(c.publishedAt)}</p>
+                                    <p class="text-neutral-200 dark:text-neutral-600">{c.month}, {c.day}, {c.year}</p>
                                     <p class="font-cal text-[25px] text-neutral-600 dark:text-neutral-200">{c.title}</p>
-                                    <p class="text-[14px] opacity-50">{c.bio}</p>
+                                    <p class="text-[14px] opacity-50">{c.description}</p>
                                 </div>
                             </a>
                         </WorksDelay>
