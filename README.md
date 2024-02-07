@@ -1,38 +1,55 @@
-# create-svelte
+# Hideko's Portfolio 
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+``` Portfolio ``` https://hideko-dev.com
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Stacks
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+---
 
-# create a new project in my-app
-npm create svelte@latest my-app
+- [Svelte](https://svelte.dev)
+- [SvelteKit](https://kit.svelte.dev)
+- [Vite](https://vite.dev)
+- [TypeScript](https://www.typescriptlang.org/)
+- [PostCSS](https://postcss.org/)
+- [TailwindCSS](https://tailwindcss.com)
+- [Shadcn-Svelte](https://shadcn-svelte.com)
+- [Bits-UI](https://www.bits-ui.com)
+- [Unovis](https://unovis.dev)
+- [Radix-UI](https://www.radix-ui.com)
+- [Vaul-Svelte](https://www.vaul-svelte.com)
+- [FontSource](https://fontsource.org)
+- [Iconify](https://iconify.design)
+- [Cloudflare Pages](https://pages.cloudflare.com)
+
+## Structures
+
+---
+
+```text
+$root
+│
+├── src  #Source codes
+│    └── lib  #Global library
+│        ├── assets  #My assets, icons, etc.
+│        └── components  #my custom components
+│            └── ui  #shadcn/ui components
+│    └── routes  #Directory routing
+│ 
+└── static  #Static files such as favicon and robots.txt
 ```
 
-## Developing
+## License
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+---
 
-```bash
-npm run dev
+**MIT License.**
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+You may fork and use my project without notification, provided you adhere to the following conditions.
 
-## Building
+- Add a link to [this repository](https://github.com/hideko-dev/portfolio)
+- Do not use the 3d voxel dog 
 
-To create a production version of your app:
+Check out [LICENSE](./LICENSE) for more detail.
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> 
