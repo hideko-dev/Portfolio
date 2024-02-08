@@ -16,7 +16,7 @@
     <title>Works - Hideko</title>
 </svelte:head>
 
-<div class="min-h-[100vh]">
+<div class="min-h-[100vh] mb-[10rem]">
     <a href="/" class="h-[4.5rem] w-max flex items-center text-[30px] ml-[20px] opacity-60 transition-all hover:opacity-100 cursor-pointer"><Icon icon="mingcute:left-line"/></a>
     <div class="w-full mt-[5rem] px-[10%]">
         <Title>Works</Title>
@@ -30,14 +30,21 @@
                     <Icon icon="eos-icons:loading"/>
                 </div>
             {:else}
-                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-[10%] gap-4 mt-[2rem]">
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-[10%] gap-4 mt-[2rem]" style="grid-template-rows: repeat(auto-fill, auto);">
                     {#each data as c, index}
                         <WorksDelay delay={index * 100}>
                             <a href={c.url}>
-                                <div>
-                                    <p class="text-neutral-200 dark:text-neutral-600">{c.month}, {c.day}, {c.year}</p>
-                                    <p class="font-cal text-[25px] text-neutral-600 dark:text-neutral-200">{c.title}</p>
-                                    <p class="text-[14px] opacity-50">{c.description}</p>
+                                <div class="p-6 flex flex-col justify-between h-full">
+                                    <div>
+                                        <p class="text-neutral-200 dark:text-neutral-600 text-[14px]">{c.month}, {c.day}, {c.year}</p>
+                                        <p class="font-cal text-[25px] text-neutral-600 dark:text-neutral-200">{c.title}</p>
+                                        <p class="text-[14px] opacity-50">{c.description}</p>
+                                    </div>
+                                    <div class="flex items-center mt-4 gap-1.5 font-body font-[500]">
+                                        {#each c.tags as tag}
+                                            <p class="text-[14px] bg-primary text-primary-foreground px-2.5 py-[1px] rounded-full opacity-100 transition-all hover:opacity-80">{tag}</p>
+                                        {/each}
+                                    </div>
                                 </div>
                             </a>
                         </WorksDelay>
