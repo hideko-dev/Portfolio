@@ -26,6 +26,8 @@ export const stacks: Record<string, string[]> = {
     ],
     technology: [
         "Node.js",
+        "React-Native",
+        "Expo",
         "Electron",
         "Tauri",
         "Supabase",
@@ -35,7 +37,7 @@ export const stacks: Record<string, string[]> = {
         "Cloudflare Pages",
         "Vercel",
         "Netlify",
-        "Render"
+        "Render",
     ],
     frontend: [
         "React",

@@ -30,7 +30,7 @@
                     <Icon icon="eos-icons:loading"/>
                 </div>
             {:else}
-                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-[10%] gap-4 mt-[2rem]" style="grid-template-rows: repeat(auto-fill, auto);">
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-[10%] gap-4 mt-[2rem]" style="grid-template-rows: repeat(auto-fill, auto)">
                     {#each data as c, index}
                         <WorksDelay delay={index * 100}>
                             <a href={c.url}>

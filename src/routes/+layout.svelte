@@ -5,6 +5,7 @@
 	import "../app.pcss"
 	import Header from "$lib/components/layout/Header.svelte"
 	import '@fontsource-variable/inter'
+	import '@fontsource-variable/noto-sans-jp'
 	import Footer from "$lib/components/layout/Footer.svelte"
 	import { onMount } from "svelte"
 	import Transition from "$lib/components/Transition.svelte";

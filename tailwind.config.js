@@ -15,7 +15,8 @@ const config = {
 		},
 		fontFamily: {
 			'body': ['Inter Variable', 'sans-serif'],
-			'cal': ['calSans', 'sans-serif']
+			'cal': ['calSans', 'sans-serif'],
+			'jp': ['Noto Sans JP Variable', 'sans-serif']
 		},
 		extend: {
 			colors: {
