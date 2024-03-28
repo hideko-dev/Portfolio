@@ -15,14 +15,12 @@
 <div class="flex justify-center items-center min-h-[100vh]">
     <div class="w-[80%] lg:w-[50rem]">
         <Title>Hideko</Title>
-        <div class="font-body font-[400] text-[14px] sm:text-[16px] explain text-neutral-500 dark:text-neutral-400">
+        <div class="font-body font-[400] text-[13px] sm:text-[16px] explain text-neutral-500 dark:text-neutral-400">
             <Delay delay={100}>
                 <Alert.Root>
                     <Rocket class="h-4 w-4" />
                     <Alert.Title class="font-[500]">Hello everyone!</Alert.Title>
-                    <Alert.Description class="text-neutral-500 dark:text-neutral-400"
-                    >I am Hideko, a fanatical open sourceror.</Alert.Description
-                    >
+                    <Alert.Description class="text-neutral-500 dark:text-neutral-400">I am Hideko, a fanatical open sourceror.</Alert.Description>
                 </Alert.Root>
             </Delay>
             <br>
@@ -34,7 +32,7 @@
                 </div>
             </Delay>
             <Delay delay={300}>
-                <div><p>Working at</p><HoverCard title="Team Nekozouneko Dev" description="Nekozouneko Server Development Team" date=" Joined December 2023" avatar={Nkznk}/></div>
+                <div><p>Working at</p><HoverCard title="Team Nekozouneko Dev" description="Nekozouneko Server Development Team" date=" Joined December 2023" avatar={Nkznk}/>, <HoverCard title="Black Labs" description="My Development Team" date=" Joined February 2024"/></div>
             </Delay>
             <br>
             <Delay delay={400}>

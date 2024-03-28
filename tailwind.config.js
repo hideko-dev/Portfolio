@@ -16,7 +16,8 @@ const config = {
 		fontFamily: {
 			'body': ['Inter Variable', 'sans-serif'],
 			'cal': ['calSans', 'sans-serif'],
-			'jp': ['Noto Sans JP Variable', 'sans-serif']
+			'jp': ['Noto Sans JP Variable', 'sans-serif'],
+			'tiktok': ['TikTok', 'sans-serif']
 		},
 		extend: {
 			colors: {
