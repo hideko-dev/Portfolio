@@ -14,7 +14,8 @@
     const links = [
         {href: "/works", title: "Works"},
         {href: "/stack", title: "Stack"},
-        {href: "/contact", title: "Contact"}
+        {href: "/contact", title: "Contact"},
+        {href: "/blacklabs", title: "BlackLabs"}
     ]
 </script>
 

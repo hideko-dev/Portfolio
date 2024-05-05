@@ -1,7 +1,7 @@
 <script lang="ts">
     import Nkznk from "$lib/assets/nekozouneko.gif"
     import HoverCard from "$lib/components/HoverCard.svelte";
-    import {Rocket} from "radix-icons-svelte";
+    import { Rocket } from "radix-icons-svelte";
     import * as Alert from "$lib/components/ui/alert";
     import Delay from "$lib/components/delay/Delay.svelte";
     import Title from "$lib/components/Title.svelte";
@@ -32,7 +32,7 @@
                 </div>
             </Delay>
             <Delay delay={300}>
-                <div><p>Working at</p><HoverCard title="Team Nekozouneko Dev" description="Nekozouneko Server Development Team" date=" Joined December 2023" avatar={Nkznk}/>, <HoverCard title="Black Labs" description="My Development Team" date=" Joined February 2024"/></div>
+                <div><p>Working at</p><HoverCard href="https://group.nekozouneko.com" title="Team Nekozouneko Dev" description="Nekozouneko Server Development Team" date=" Joined December 2023" avatar={Nkznk}/>, <HoverCard href="/blacklabs" title="Black Labs" description="My Development Team" date=" Joined February 2024"/></div>
             </Delay>
             <br>
             <Delay delay={400}>

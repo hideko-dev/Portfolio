@@ -10,7 +10,8 @@
         {title: "Home", icon: "mynaui:home", shortcut: "⇧⌘H", href: "/"},
         {title: "Works", icon: "fluent:calendar-work-week-16-regular", shortcut: "⇧⌘W", href: "/works"},
         {title: "Stack", icon: "ph:stack", shortcut: "⇧⌘S", href: "/stack"},
-        {title: "Contact", icon: "fluent:mail-32-regular", shortcut: "⇧⌘C", href: "/contact"}
+        {title: "Contact", icon: "fluent:mail-32-regular", shortcut: "⇧⌘C", href: "/contact"},
+        {title: "BlackLabs", icon: "ph:fire-simple", shortcut: "⇧⌘B", href: "/blacklabs"}
     ]
 </script>
 
