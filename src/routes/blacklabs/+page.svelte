@@ -4,7 +4,7 @@
     import Delay from "$lib/components/delay/Delay.svelte"
     import { Avatar, Rocket } from "radix-icons-svelte"
     import * as Alert from "$lib/components/ui/alert"
-    import BlackLabs from "$lib/assets/BlackLabs.webp"
+    import BlackLabs from "$lib/assets/blacklabs.webp"
     import * as CnAvatar from "$lib/components/ui/avatar"
     import { Badge } from "$lib/components/ui/badge"
     import WorksDelay from "$lib/components/delay/WorksDelay.svelte"
