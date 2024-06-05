@@ -11,9 +11,9 @@
 
     const members = [
         {name: "ひでこ", subName: "Hideko", github: "Hideko-Dev", tags: ["Owner"]},
-        {name: "けと", subName: "Gbost_", github: "keto", tags: ["Developer"]},
         {name: "ぷらすちっく", subName: "pla.s2", github: "mad889jhj", tags: ["Admin", "Management"]},
-        {name: "ぽけか", subName: "Pokeka", github: "MinePoke", tags: ["Admin", "PR"]}
+        {name: "ぽけか", subName: "Pokeka", github: "MinePoke", tags: ["Admin", "PR"]},
+        {name: "ふぁる", subName: "faru.", github: "faru1109", tags: ["Admin", "Moderator"]},
     ]
 
     const projects = [
