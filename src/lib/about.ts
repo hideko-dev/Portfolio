@@ -1,4 +1,6 @@
 export const works = [
+    {title: "VSeries", description: "A spigot library supporting various features from 1.8 to 1.19.3.", url: "https://github.com/hideko-dev/VSeries", month: "Jun", day: 24, year: 24, tags: ["Kotlin", "Library"]},
+    {title: "BlackLabs", description: "Creator Development Team from Japan.", url: "https://github.com/BlackLabs-Team", month: "Apr", day: 10, year: 24, tags: ["Team"]},
     {title: "hideko-dev.com", description: "My portfolio site with modern and fast design.", url: "https://hideko-dev.com", month: "Jan", day: 6, year: 24, tags: ["Modern", "Frontend"]},
     {title: "Ranking", description: "All Nekozouneko Server ranking systems", url: "https://ranking.nekozouneko.net", month: "Jul", day: 12, year: 23, tags: ["Nekozouneko", "Fullstack"]},
     {title: "Nekomit", description: "Commit deployment system for Nekozouneko Develop Enviroments.", url: "https://github.com/TeamNekozouneko/Nekomit", month: "Dec", day: 23, year: 23, tags: ["Nekozouneko", "Backend"]},
