@@ -32,10 +32,13 @@
                 </div>
             </Delay>
             <Delay delay={300}>
-                <div><p>Working at</p><HoverCard href="https://group.nekozouneko.com" title="Team Nekozouneko Dev" description="Nekozouneko Server Development Team" date=" Joined December 2023" avatar={Nkznk}/>, <HoverCard href="/blacklabs" title="Black Labs" description="My Development Team" date=" Joined February 2024"/></div>
+                <div><p>Working at</p><HoverCard href="/blacklabs" title="Black Labs" description="My Development Team" date=" Joined February 2024"/></div>
+            </Delay>
+            <Delay delay={400}>
+                <div><p>Worked before at</p><HoverCard href="https://group.nekozouneko.com" title="Team Nekozouneko Dev" description="Nekozouneko Server Development Team" date=" Joined December 2023" avatar={Nkznk}/>,</div>
             </Delay>
             <br>
-            <Delay delay={400}>
+            <Delay delay={500}>
                 <div><p>Hello, I am a full stack engineer. I am a full stack engineer. I am mainly good at front-end development. But of course I am also good at backend and have touched various stacks. I have been exposed to various technologies, various designs, and have worked with people from many countries.</p></div>
             </Delay>
         </div>
