@@ -1,14 +1,14 @@
 <script lang="ts">
-	import type { HTMLTextareaAttributes } from "svelte/elements";
-	import { cn } from "$lib/utils";
-	import type { TextareaEvents } from ".";
+	import type { HTMLTextareaAttributes } from "svelte/elements"
+	import { cn } from "$lib/utils"
+	import type { TextareaEvents } from "."
 
-	type $$Props = HTMLTextareaAttributes;
-	type $$Events = TextareaEvents;
+	type $$Props = HTMLTextareaAttributes
+	type $$Events = TextareaEvents
 
-	let className: $$Props["class"] = undefined;
-	export let value: $$Props["value"] = undefined;
-	export { className as class };
+	let className: $$Props["class"] = undefined
+	export let value: $$Props["value"] = undefined
+	export { className as class }
 </script>
 
 <textarea

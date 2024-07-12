@@ -1,16 +1,16 @@
 <script lang="ts">
-	import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui";
-	import { cn } from "$lib/utils";
-	import { ChevronRight } from "radix-icons-svelte";
+	import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui"
+	import { cn } from "$lib/utils"
+	import { ChevronRight } from "radix-icons-svelte"
 
 	type $$Props = DropdownMenuPrimitive.SubTriggerProps & {
-		inset?: boolean;
-	};
-	type $$Events = DropdownMenuPrimitive.SubTriggerEvents;
+		inset?: boolean
+	}
+	type $$Events = DropdownMenuPrimitive.SubTriggerEvents
 
-	let className: $$Props["class"] = undefined;
-	export let inset: $$Props["inset"] = undefined;
-	export { className as class };
+	let className: $$Props["class"] = undefined
+	export let inset: $$Props["inset"] = undefined
+	export { className as class }
 </script>
 
 <DropdownMenuPrimitive.SubTrigger

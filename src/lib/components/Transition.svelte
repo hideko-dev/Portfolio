@@ -1,6 +1,6 @@
 <script>
-    import { fly, fade } from 'svelte/transition';
-    export let pathname = '';
+    import { fly, fade } from 'svelte/transition'
+    export let pathname = ''
 </script>
 
 

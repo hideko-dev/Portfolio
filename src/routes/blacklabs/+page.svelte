@@ -7,7 +7,7 @@
     import BlackLabs from "$lib/assets/blacklabs.webp"
     import * as CnAvatar from "$lib/components/ui/avatar"
     import { Badge } from "$lib/components/ui/badge"
-    import WorksDelay from "$lib/components/delay/WorksDelay.svelte"
+    import CardDelay from "$lib/components/delay/CardDelay.svelte"
 
     const members = [
         {name: "ひでこ", subName: "Hideko", github: "Hideko-Dev", tags: ["Owner"]},
@@ -85,7 +85,7 @@
                 <div class="border-[1px] rounded-[10px] h-[30rem] p-4 mt-5 xl:mt-0">
                     <div class="shadow-based rounded-[15px] font-body hover:shadow-based-up transition-all duration-300 cursor-pointer border-neutral-800 dark:border-[1px] dark:hover:bg-neutral-900">
                         {#each projects as project, index}
-                            <WorksDelay delay={index*100}>
+                            <CardDelay delay={index*100}>
                                 <a href={project.url}>
                                     <div class="p-6 flex flex-col justify-between h-full">
                                         <div>
@@ -100,7 +100,7 @@
                                         </div>
                                     </div>
                                 </a>
-                            </WorksDelay>
+                            </CardDelay>
                         {/each}
                     </div>
                 </div>

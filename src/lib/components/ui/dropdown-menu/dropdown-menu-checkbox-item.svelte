@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui";
-	import { cn } from "$lib/utils";
-	import { Check } from "radix-icons-svelte";
+	import { DropdownMenu as DropdownMenuPrimitive } from "bits-ui"
+	import { cn } from "$lib/utils"
+	import { Check } from "radix-icons-svelte"
 
-	type $$Props = DropdownMenuPrimitive.CheckboxItemProps;
-	type $$Events = DropdownMenuPrimitive.CheckboxItemEvents;
+	type $$Props = DropdownMenuPrimitive.CheckboxItemProps
+	type $$Events = DropdownMenuPrimitive.CheckboxItemEvents
 
-	let className: $$Props["class"] = undefined;
-	export let checked: $$Props["checked"] = undefined;
-	export { className as class };
+	let className: $$Props["class"] = undefined
+	export let checked: $$Props["checked"] = undefined
+	export { className as class }
 </script>
 
 <DropdownMenuPrimitive.CheckboxItem

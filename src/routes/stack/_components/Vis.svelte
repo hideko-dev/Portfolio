@@ -1,13 +1,13 @@
 <script lang="ts">
-    import { VisXYContainer, VisGroupedBar } from "@unovis/svelte";
+    import { VisXYContainer, VisGroupedBar } from "@unovis/svelte"
     
     export let data: Array<any> = []
     export let title: string
-    const x = (d: { goal: number; id: number }) => d.id;
-    const y = (d: { goal: number; id: number }) => d.goal;
-    let goal = 350;
+    const x = (d: { goal: number; id: number }) => d.id
+    const y = (d: { goal: number; id: number }) => d.goal
+    let goal = 350
     function handleClick(adjustment: number) {
-        goal = Math.max(200, Math.min(400, goal + adjustment));
+        goal = Math.max(200, Math.min(400, goal + adjustment))
     }
 </script>
 

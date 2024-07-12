@@ -8,11 +8,12 @@
 
     const hrefs = [
         {href: "https://github.com/Hideko-Dev", icon: "mingcute:github-line"},
-        {href: "https://instagram.com/hideko.cat", icon: "mdi:instagram"},
+        {href: "https://discord.com/users/1103253246807650344", icon: "ic:baseline-discord"},
     ]
 
     const links = [
         {href: "/works", title: "Works"},
+        {href: "/blog", title: "Blog"},
         {href: "/stack", title: "Stack"},
         {href: "/contact", title: "Contact"},
         {href: "/blacklabs", title: "BlackLabs"}

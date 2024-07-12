@@ -1,10 +1,10 @@
-import { toast } from 'svelte-sonner';
-import { writable } from 'svelte/store';
+import { toast } from 'svelte-sonner'
+import { writable } from 'svelte/store'
 
-const VITE_FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
-const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const VITE_FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT
+const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-const contactValue = writable(false);
+const contactValue = writable(false)
 
 function runToast(message: string, description: string) {
     toast(message, {
@@ -14,7 +14,7 @@ function runToast(message: string, description: string) {
             //@ts-ignore
             onClick: () => event.cancelable,
         },
-    });
+    })
 }
 
 async function submitContact(mail: string, content: string) {
@@ -29,10 +29,10 @@ async function submitContact(mail: string, content: string) {
                     mail,
                     content,
                 }),
-            });
-        } else runToast('ERROR', 'Your email address is incorrect.');
-        runToast('Transmission complete.', 'Your message has been successfully sent.');
-    } else runToast('ERROR', 'Please enter your email and all content.');
+            })
+        } else runToast('ERROR', 'Your email address is incorrect.')
+        runToast('Transmission complete.', 'Your message has been successfully sent.')
+    } else runToast('ERROR', 'Please enter your email and all content.')
 }
 
 export { contactValue, submitContact }

@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { Check, CaretSort } from "radix-icons-svelte";
-    import * as Command from "$lib/components/ui/command";
-    import * as Popover from "$lib/components/ui/popover";
-    import { Button } from "$lib/components/ui/button";
-    import { value } from "$lib/stacks";
-    import { cn } from "$lib/utils";
-    import { tick } from "svelte";
+    import { Check, CaretSort } from "radix-icons-svelte"
+    import * as Command from "$lib/components/ui/command"
+    import * as Popover from "$lib/components/ui/popover"
+    import { Button } from "$lib/components/ui/button"
+    import { value } from "$lib/stacks"
+    import { cn } from "$lib/utils"
+    import { tick } from "svelte"
 
     const frameworks = [
         {
@@ -28,18 +28,18 @@
             value: "database",
             label: "Database"
         },
-    ];
+    ]
 
-    let open = false;
+    let open = false
 
     $: selectedValue =
-        frameworks.find((f) => f.value === $value)?.label ?? "Select a type...";
+        frameworks.find((f) => f.value === $value)?.label ?? "Select a type..."
 
     function closeAndFocusTrigger(triggerId: string) {
-        open = false;
+        open = false
         tick().then(() => {
-            document.getElementById(triggerId)?.focus();
-        });
+            document.getElementById(triggerId)?.focus()
+        })
     }
 </script>
 
@@ -66,7 +66,7 @@
                         <Command.Item
                                 value={framework.value}
                                 onSelect={(currentValue) => {
-              value.set(currentValue);
+              value.set(currentValue)
               closeAndFocusTrigger(ids.trigger)
             }} >
                             <Check class={cn("mr-2 h-4 w-4", $value !== framework.value && "text-transparent" )}/>

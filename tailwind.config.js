@@ -1,4 +1,4 @@
-import { fontFamily } from "tailwindcss/defaultTheme";
+import { fontFamily } from "tailwindcss/defaultTheme"
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -16,6 +16,8 @@ const config = {
 		fontFamily: {
 			'body': ['Inter Variable', 'sans-serif'],
 			'cal': ['calSans', 'sans-serif'],
+			'customMedium': ['customMedium', 'sans-serif'],
+			'customBook': ['customBook', 'sans-serif'],
 			'jp': ['Noto Sans JP Variable', 'sans-serif'],
 			'tiktok': ['TikTok', 'sans-serif']
 		},
@@ -64,11 +66,11 @@ const config = {
 				sans: [...fontFamily.sans]
 			},
 			boxShadow: {
-				'based': '0 0 10px 0 rgba(0, 0, 0, 0.1);',
-				'based-up': '0 0 20px 0 rgba(0, 0, 0, 0.2);'
+				'based': '0 0 10px 0 rgba(0, 0, 0, 0.1)',
+				'based-up': '0 0 20px 0 rgba(0, 0, 0, 0.2)'
 			}
 		}
 	},
-};
+}
 
-export default config;
+export default config

@@ -1,12 +1,11 @@
 <script lang="ts">
-    import * as Drawer from "$lib/components/ui/drawer";
-    import { Button } from "$lib/components/ui/button";
-    import { Input } from "$lib/components/ui/input";
-    import { Textarea } from "$lib/components/ui/textarea";
-    import { Alert } from "$lib/components/ui/alert";
-    import Translations from "$lib/components/contact/Translations.svelte";
-    import {submitContact} from "$lib/contact";
-    import { contactValue } from "$lib/contact";
+    import * as Drawer from "$lib/components/ui/drawer"
+    import { Button } from "$lib/components/ui/button"
+    import { Input } from "$lib/components/ui/input"
+    import { Textarea } from "$lib/components/ui/textarea"
+    import { Alert } from "$lib/components/ui/alert"
+    import Translations from "$lib/components/contact/Translations.svelte"
+    import { submitContact, contactValue } from "$lib/pages/contact"
     let mail: string
     let content: string
     let value: boolean

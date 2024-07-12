@@ -1,6 +1,6 @@
 <script>
 	import { ModeWatcher } from "mode-watcher"
-	import { contactValue } from "$lib/contact"
+	import { contactValue } from "$lib/pages/contact"
 	import { Toaster } from "svelte-sonner"
 	import "../app.pcss"
 	import Header from "$lib/components/layout/Header.svelte"

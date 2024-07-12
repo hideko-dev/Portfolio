@@ -4,7 +4,17 @@
 
 @font-face {
   font-family: 'calSans';
-  src: url('./lib/assets/CalSans-SemiBold.ttf');
+  src: url('./lib/assets/CalSans-SemiBold.woff2');
+}
+
+@font-face {
+  font-family: "customMedium";
+  src: url('./lib/assets/CustomFont-Medium.woff2');
+}
+
+@font-face {
+  font-family: "customBook";
+  src: url('./lib/assets/CustomFont-Book.woff2');
 }
 
 @layer base {
@@ -13,70 +23,72 @@
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
- 
+
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
- 
+
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
- 
+
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
- 
+
     --primary: 240 5.9% 10%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
- 
+
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
- 
+
     --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 0 0% 98%;
- 
+
     --ring: 240 10% 3.9%;
- 
+
     --radius: 0.5rem;
 
     --prime: rgb(9,9,11);
+    --prime-code: 9, 9, 11;
     --prime-tune: rgb(250,250,250);
   }
- 
+
   .dark {
     --prime: rgb(250,250,250);
+    --prime-code: 250, 250, 250;
     --prime-tune: rgb(9,9,11);
 
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
- 
+
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
- 
+
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
- 
+
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
- 
+
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
- 
+
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
- 
+
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
- 
+
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
- 
+
     --ring: 240 4.9% 83.9%;
   }
 }
@@ -96,7 +108,7 @@
     display: none;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;

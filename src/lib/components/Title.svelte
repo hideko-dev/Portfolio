@@ -2,19 +2,19 @@
     import { onMount, onDestroy } from "svelte"
     import { writable } from 'svelte/store'
     import Vis from "../../routes/stack/_components/Vis.svelte"
-    import { fly } from "svelte/transition";
+    import { fly } from "svelte/transition"
 
-    const gradientWStore = writable(0);
+    const gradientWStore = writable(0)
 
     onMount(() => {
         setTimeout(() => {
-            gradientWStore.set(100);
+            gradientWStore.set(100)
         }, 400)
-    });
+    })
 
     onDestroy(() => {
-        gradientWStore.set(0);
-    });
+        gradientWStore.set(0)
+    })
 </script>
 
 <div class="hidden"><Vis title="Vis"/></div>

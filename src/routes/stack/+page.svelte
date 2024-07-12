@@ -1,12 +1,12 @@
 <script lang="ts">
-    import Icon from "@iconify/svelte";
-    import Title from "$lib/components/Title.svelte";
-    import Selector from "./_components/Selector.svelte";
-    import { Badge } from "$lib/components/ui/badge";
-    import { onMount, afterUpdate } from "svelte";
-    import Delay from "$lib/components/delay/Delay.svelte";
-    import { stacks } from "$lib/about";
-    import { value } from "$lib/stacks";
+    import Icon from "@iconify/svelte"
+    import Title from "$lib/components/Title.svelte"
+    import Selector from "./_components/Selector.svelte"
+    import { Badge } from "$lib/components/ui/badge"
+    import { onMount, afterUpdate } from "svelte"
+    import Delay from "$lib/components/delay/Delay.svelte"
+    import { stacks } from "$lib/pages/about"
+    import { value } from "$lib/stacks"
     let currentStack: Array<any> = []
     let currentValue = ""
 
@@ -14,18 +14,18 @@
     $: if (currentValue !== $value) updateCurrentStack()
 
     function updateCurrentStack() {
-        currentValue = $value;
-        currentStack = [];
+        currentValue = $value
+        currentStack = []
         if(currentValue == "") {
             Object.values(stacks).forEach((e: string[]) => {
                 e.forEach((stackItem: string) => {
-                    currentStack.push({ name: stackItem, type: "unknown" });
+                    currentStack.push({ name: stackItem, type: "unknown" })
                 })
             })
         } else if (stacks[currentValue]) {
             stacks[currentValue].forEach((stackItem: string) => {
-                currentStack.push({ name: stackItem, type: "unknown" });
-            });
+                currentStack.push({ name: stackItem, type: "unknown" })
+            })
         }
     }
 </script>

@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { Calendar } from "radix-icons-svelte";
-    import * as Avatar from "$lib/components/ui/avatar";
-    import * as HoverCard from "$lib/components/ui/hover-card";
+    import { Calendar } from "radix-icons-svelte"
+    import * as Avatar from "$lib/components/ui/avatar"
+    import * as HoverCard from "$lib/components/ui/hover-card"
     export let href = "https://hideko-dev.com"
     export let title = "@hideko-dev"
     export let date = "September 2023"
@@ -54,6 +54,6 @@
     }
     p:hover::before {
         width: 100%;
-        left: 0
+        left: 0;
     }
 </style>

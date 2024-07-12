@@ -1,17 +1,18 @@
 <script lang="ts">
-    import { Button } from "$lib/components/ui/button";
-    import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
+    import { Button } from "$lib/components/ui/button"
+    import * as DropdownMenu from "$lib/components/ui/dropdown-menu"
     import Icon from "@iconify/svelte"
-    import {toggleMode, userPrefersMode} from "mode-watcher";
-    import {Switch} from "$lib/components/ui/switch";
-    import Contact from "$lib/components/contact/Contact.svelte";
+    import {toggleMode, userPrefersMode} from "mode-watcher"
+    import {Switch} from "$lib/components/ui/switch"
+    import Contact from "$lib/components/contact/Contact.svelte"
 
     const items = [
         {title: "Home", icon: "mynaui:home", shortcut: "⇧⌘H", href: "/"},
         {title: "Works", icon: "fluent:calendar-work-week-16-regular", shortcut: "⇧⌘W", href: "/works"},
+        {title: "Blog", icon: "mage:note", shortcut: "⇧⌘B", href: "/blog",},
         {title: "Stack", icon: "ph:stack", shortcut: "⇧⌘S", href: "/stack"},
         {title: "Contact", icon: "fluent:mail-32-regular", shortcut: "⇧⌘C", href: "/contact"},
-        {title: "BlackLabs", icon: "ph:fire-simple", shortcut: "⇧⌘B", href: "/blacklabs"}
+        {title: "BlackLabs", icon: "ph:fire-simple", shortcut: "⇧⌘L", href: "/blacklabs"}
     ]
 </script>
 
