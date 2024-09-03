@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Writer-Regular";
+    src: url("./writer-regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Writer-Medium";
+    src: url("./writer-medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GoogleSans-Medium";
+    src: url("./googlesans-medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GoogleSans-Bold";
+    src: url("./googlesans-bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter-Variable";
+    src: url("./inter-variable.ttf") format("truetype");
+    font-weight: 100 900;
+}
