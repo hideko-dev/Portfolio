@@ -24,6 +24,7 @@
 	"type": "module",
 	"dependencies": {
 		"@iconify/svelte": "^4.0.2",
+		"@sveltejs/adapter-cloudflare": "^4.7.2",
 		"bits-ui": "^0.21.13",
 		"clsx": "^2.1.1",
 		"marked": "^14.1.0",
