@@ -15,7 +15,7 @@
     </a>
     <div>
         <div class="w-full px-[8%] md:w-[35rem]">
-            <AnimatedTitle class="font-googlesans-medium">Hideko</AnimatedTitle>
+            <AnimatedTitle class="font-googlesans-bold text-[30px]">Hideko</AnimatedTitle>
             <div class="w-full flex items-center justify-center h-8 rounded-[2px] bg-gradient-to-r from-transparent via-[rgba(62,165,255,0.2)] to-transparent border-[1px] border-dashed border-blue-400 border-opacity-15">
                 <div class="flex items-center gap-1.5 text-blue-400">
                     <Icon icon="mingcute:ai-line" class="text-[16px] sm:text-[17px]"/>
