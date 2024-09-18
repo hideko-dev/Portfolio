@@ -4,5 +4,6 @@ export interface BlogType {
     title: string,
     body: string,
     createdAt: Date,
-    tags: string[],
+    tags: string,
+    view: number,
 }

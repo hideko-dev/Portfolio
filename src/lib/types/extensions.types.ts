@@ -3,5 +3,6 @@ export interface ExtensionType {
     description: string,
     title: string,
     createdAt: Date,
-    tags: string[],
+    tags: string,
+    url: string,
 }

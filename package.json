@@ -28,6 +28,7 @@
 		"bits-ui": "^0.21.13",
 		"clsx": "^2.1.1",
 		"marked": "^14.1.0",
+		"microcms-js-sdk": "^3.1.2",
 		"mode-watcher": "^0.4.1",
 		"svelte-legos": "^0.2.5",
 		"svelte-radix": "^1.1.1",
