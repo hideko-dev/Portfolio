@@ -1,6 +1,9 @@
 <script lang="ts">
     import { marked } from "marked";
-    export let body: string = "";
+    export let body: string = ``;
+    $: {
+        console.log(body)
+    }
 </script>
 
 <div class="md">
@@ -82,7 +85,7 @@
     }
     :global(.md hr) {
         border: none;
-        margin-block: 3px;
+        margin-block: 8px;
         height: 2px;
         border-radius: 100px;
         background: var(--prime2);
