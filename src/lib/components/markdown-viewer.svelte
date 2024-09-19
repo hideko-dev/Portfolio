@@ -4,7 +4,7 @@
 </script>
 
 <div class="md">
-    {@html marked(body)}
+    {@html marked(body, { breaks: true })}
 </div>
 
 <style>
