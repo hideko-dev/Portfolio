@@ -6,7 +6,7 @@
     }
 </script>
 
-<div class="md">
+<div class="md font-inter-variable font-[400]">
     {@html marked(body, { breaks: true })}
 </div>
 
@@ -17,23 +17,23 @@
     }
     :global(.md h1) {
         font-size: 30px;
-        font-weight: 800;
+        font-weight: 700;
         line-height: 1;
         padding-block: 4px;
     }
     :global(.md h2) {
         font-size: 25px;
-        font-weight: 800;
+        font-weight: 700;
         line-height: 1;
         padding-block: 4px;
     }
     :global(.md h3) {
         font-size: 20px;
-        font-weight: 800;
+        font-weight: 700;
     }
     :global(.md h4) {
         font-size: 18px;
-        font-weight: 800;
+        font-weight: 700;
     }
 
     :global(.md img[src]) {

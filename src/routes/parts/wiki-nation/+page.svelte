@@ -10,7 +10,7 @@
     }
 </script>
 
-<div class="h-screen w-full flex items-center justify-center font-writer-regular text-[13px]">
+<div class="h-screen w-full flex items-center justify-center">
     <div class="bg-primary bg-opacity-5 border-primary border-opacity-5 border-[1px] px-3 pr-4 py-2 rounded-[10px]">
         <div class="pl-3 relative">
             <div class="transition-all duration-300 absolute left-0 w-1.5 h-1.5 rounded-full bg-blue-500" style="top: {top}px;"/>

@@ -5,7 +5,7 @@
 
 
 {#key pathname}
-    <div in:fly={{ y: 5, duration: 400, delay: 400 }} out:fly={{ y: 5, duration: 400 }}>
+    <div in:fly={{ y: 5, duration: 400, delay: 400 }} out:fly={{ y: 5, duration: 400 }} class="h-max">
         <slot />
     </div>
 {/key}

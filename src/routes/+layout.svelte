@@ -31,7 +31,7 @@
 <ModeWatcher/>
 <Toaster toastOptions={{ class: 'bg-blue-900 bg-opacity-20 backdrop-blur-2xl border-blue-700 border-opacity-10 rounded-[2px]' }}/>
 <div class="a bg-primary h-[2px] bg-opacity-60 absolute top-0 left-0" style="width: {width}%; opacity: {width === 100 ? 0 : 100};"/>
-<div class="font-inter-variable font-[500] text-[15px] tracking-tight bg-background" data-vaul-drawer-wrapper>
+<div class="font-inter-variable font-[500] text-[15px] tracking-tight min-h-screen h-max" data-vaul-drawer-wrapper>
     <NavigatorDrawer/>
     <EmailDrawer/>
     <Navigator/>

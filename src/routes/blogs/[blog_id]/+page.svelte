@@ -25,7 +25,7 @@
     })
 </script>
 
-<div class="h-screen w-full flex justify-center font-writer-regular">
+<div class="min-h-screen max-h-max pb-8 w-full flex justify-center font-writer-regular">
     {#if data}
         <div class="w-full px-6 md:px-0 md:w-[35rem] mt-[8rem] sm:mt-[10rem]">
             <div class="leading-[1.5rem]">
