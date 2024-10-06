@@ -1,9 +1,6 @@
 <script lang="ts">
     import { marked } from "marked";
     export let body: string = ``;
-    $: {
-        console.log(body)
-    }
 </script>
 
 <div class="md font-inter-variable font-[400]">

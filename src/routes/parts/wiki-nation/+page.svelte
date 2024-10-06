@@ -4,9 +4,9 @@
     $: if(selected === 0) {
         top = 6
     } else if(selected === 1) {
-        top = 26
+        top = 31
     } else if(selected === 2) {
-        top = 45
+        top = 53
     }
 </script>
 

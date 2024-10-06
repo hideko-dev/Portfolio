@@ -7,20 +7,23 @@ export const client = createClient({
 })
 
 export async function incrementBlogViews(id: string) {
-    blogs.update(items => {
-        return items.map(item => {
-            if (item.id === id) {
-                return { ...item, data: item.view+1 };
+    blogs.update((value) => {
+        return value.map(blog => {
+            if (blog.id === id) {
+                return {
+                    ...blog,
+                    view: blog.view + 1
+                };
             }
-            return item;
+            return blog;
         });
     });
-    const data = (await client.getAllContents({endpoint: "blogs"})).find(a => a.id === id)
+    const data = await client.getAllContents({endpoint: "blogs"})
     await client.update({
         endpoint: "blogs",
-        contentId: "kustom-ui",
+        contentId: id,
         content: {
-            view: data.view+1
+            view: data.find(a => a.id === id).view+1
         }
     })
 }

@@ -18,10 +18,10 @@
             <NavigatorDrawerHref icon="mingcute:at-line" on:click={() => emailDrawerStore.set(true)}>Email</NavigatorDrawerHref>
             <NavigatorDrawerHref icon="mingcute:github-line" href="https://github.com/hideko-dev">Github</NavigatorDrawerHref>
             <NavigatorDrawerHref icon="ic:baseline-discord" href="https://discord.com/users/1103253246807650344">Discord</NavigatorDrawerHref>
-            <NavigatorDrawerLine>Labs</NavigatorDrawerLine>
-            <NavigatorDrawerHref icon="mdi:about-circle-outline">About</NavigatorDrawerHref>
-            <NavigatorDrawerHref icon="ic:outline-people-alt">Team</NavigatorDrawerHref>
-            <NavigatorDrawerHref icon="ic:twotone-work-outline">Jobs</NavigatorDrawerHref>
+<!--            <NavigatorDrawerLine>Labs</NavigatorDrawerLine>-->
+<!--            <NavigatorDrawerHref icon="mdi:about-circle-outline">About</NavigatorDrawerHref>-->
+<!--            <NavigatorDrawerHref icon="ic:outline-people-alt">Team</NavigatorDrawerHref>-->
+<!--            <NavigatorDrawerHref icon="ic:twotone-work-outline">Jobs</NavigatorDrawerHref>-->
         </div>
         <Drawer.Footer class="px-6 text-[13px] mb-2">
             <div class="bg-blue-100 dark:bg-blue-400 dark:bg-opacity-15 hover:bg-blue-200 hover:dark:bg-opacity-20 transition-all duration-200 py-1 rounded-[5px] text-center cursor-pointer" on:click={() => toggleMode()}>Switch Theme</div>

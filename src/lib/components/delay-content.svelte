@@ -5,13 +5,14 @@
     export let delay = 0
     export let className: string = ""
     export let href: string = ""
+    export let onClick: () => void = () => {}
     export { className as class }
     let tmp: boolean = false
     onMount(() => tmp = true)
 </script>
 
 {#key tmp}
-    <a class={className} href={href===''?null:href} in:fly={{ duration: 1200, y: 5, delay }}>
+    <a class={className} href={href===''?null:href} in:fly={{ duration: 1200, y: 5, delay }} on:click={onClick}>
         <slot/>
     </a>
 {/key}

@@ -17,12 +17,9 @@
     $: if($blogs) {
         if($blogs.length !== 0) {
             data = $blogs.find(blog => blog.id === id);
+            incrementBlogViews(data!!.id)
         }
     }
-
-    onMount(async() => {
-        if(data) await incrementBlogViews(data.id)
-    })
 </script>
 
 <div class="min-h-screen max-h-max pb-8 w-full flex justify-center font-writer-regular">
@@ -37,7 +34,7 @@
                     <p class="text-[25px] font-googlesans-bold">{data.title}</p>
                     <div class="flex items-center justify-center gap-1 text-primary text-opacity-30 mr-0.5 h-[1.4rem] pt-[1px] px-2 pr-[0.6rem] rounded-full bg-primary bg-opacity-5 border-primary border-opacity-10 border-[1px]">
                         <Icon icon="fluent:eye-16-regular"/>
-                        <p class="text-[11px]">{data.view}</p>
+                        <p class="text-[11px]">{data.view+1}</p>
                     </div>
                 </div>
                 <p class="text-primary text-opacity-50">{data.description}</p>

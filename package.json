@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@auth/sveltekit": "^1.5.3",
 		"@iconify/svelte": "^4.0.2",
 		"@sveltejs/adapter-cloudflare": "^4.7.2",
 		"bits-ui": "^0.21.13",

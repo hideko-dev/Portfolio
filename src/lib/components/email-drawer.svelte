@@ -31,7 +31,7 @@
             return;
         }
         buttonEnabled = false
-        const promise = fetch("https://formspree.io/f/mvgpyoyq", {
+        const promise = fetch(import.meta.env.VITE_FORMSPREE_ENDPOINT, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, body })
